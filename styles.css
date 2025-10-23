@@ -1,0 +1,24 @@
+/*Navbar Settings*/
+nav a{
+    list-style-type: none;
+    text-decoration: none;
+    border: .2px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    justify-items: space-around;
+}
+nav a:hover{
+    background-color: lightgray;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #384d64;
+    padding: 5px 15px;
+}
+
+header{
+    background-image: url('layout-01-assets/img11.jpg');
+}
