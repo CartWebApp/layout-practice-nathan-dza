@@ -8,11 +8,10 @@ nav{
     margin-left: -8px;
     margin-right: -8px;
     flex-wrap: wrap;
-    align-content: center;
 }
 
 nav a{
-    list-style-type: none;
+
     text-decoration: none;
     border: .2px solid rgb(255, 255, 255);
     padding: 10px;
@@ -48,35 +47,36 @@ header{
 /*Headline Settings*/
 .headCol{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    grid-template-areas:" G R B";
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:". headG headB headR .";
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    
 }
 
 .headG{
-    grid-area: G;
-    background-color: rgb(238, 238, 238);
+    text-align: center;
+    grid-area: headG;
+    background-color: rgb(236, 236, 236);
+    max-width: 360px;
 }
 
-.headB{
-    grid-area: B;
-    
+
+
+.headB{ 
+    text-align: center;
+    grid-area: headB;
+    background-color: rgb(236, 236, 236);
+    max-width: 360px;
 }
 
 .headR{
-    grid-area: R;
-    
+    text-align: center;
+    grid-area: headR;
+    background-color: rgb(236, 236, 236);
+    max-width: 360px;
 }
-
-
-
-
-
-
-
 
 
 
