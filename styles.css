@@ -1,3 +1,12 @@
+/*General settings*/
+*{
+    font-family: "Sans";
+}
+p{
+    margin: 15px;
+}
+
+
 /*Navbar Settings*/
 nav{
     margin-top: -8px;
@@ -46,13 +55,13 @@ header{
 
 /*Headline Settings*/
 .headCol{
-    display: grid;
+    display: grid; 
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:". headG headB headR .";
     margin-top: 2.5em;
     margin-bottom: 2.5em;
-    
+    min-height: 450px;
 }
 
 .headG{
@@ -76,10 +85,40 @@ header{
     grid-area: headR;
     background-color: rgb(236, 236, 236);
     max-width: 360px;
+    
+}
+
+
+/*2 Column Section*/
+.TwoCol{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+    grid-template-areas: ". colL colR .";
+    text-align: center;
+    padding-bottom: 11px;
+    min-height: 450px;
+}
+
+.ColumnLeft{
+    grid-area: colL;
+    background-color: rgb(236, 236, 236);
+    max-width: 555px;
+}
+
+.ColumnRight{
+    grid-area: colR;
+    background-color: rgb(236, 236, 236);
+    max-width: 555px;
 }
 
 
 
+
+/*Buttons*/
+a[href="#"]{
+    text-decoration: none;
+}
 
 
 
